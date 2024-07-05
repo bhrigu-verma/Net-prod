@@ -13,9 +13,9 @@ const Header = ({ data }) => {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
             }}
-            className="max-w-full h-[65vw] md:h-[68vh] flex flex-col justify-end items-start p-[3%] select-none"
+            className="max-w-full  h-[60vh] md:h-[70vh] flex flex-col justify-end items-start p-[3%] select-none"
         >
-            <h1 className="w-[70%] lg:text-5xl md:text-4xl sm:text-4xl text-3xl  font-black text-white">
+            <h1 className="w-[70%] lg:text-5xl md:text-4xl sm:text-4xl text-2xl  font-black text-white">
                 {data.name ||
                     data.title ||
                     data.original_name ||
@@ -38,7 +38,7 @@ const Header = ({ data }) => {
             </p>
             <Link
                 to={`/${data.media_type}/details/${data.id}/trailer`}
-                className="mt-5 bg-[#6556CD] text-2xl p-[6px] md:p-[14px] rounded text-zinc-300 hover:bg-purple-800 font-medium md:font-semibold duration-700"
+                className="mt-5 bg-[#6556CD] text-xl md:text-2xl p-[4px] md:p-[14px] rounded text-zinc-300 hover:bg-purple-800 font-medium md:font-semibold duration-700"
             >
                 Watch Trailer
             </Link>

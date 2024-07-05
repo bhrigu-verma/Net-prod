@@ -28,7 +28,7 @@ const Topnav = () => {
             <input
                 onChange={(e) => setquery(e.target.value)}
                 value={query}
-                className="w-[50%]  text-zinc-200 mx-10 p-5 text-xl outline-none border-none bg-transparent"
+                className="w-[50%]   text-zinc-200 mx-10 p-5 text-xl outline-none border-none bg-transparent"
                 type="text"
                 placeholder="search anything"
             />

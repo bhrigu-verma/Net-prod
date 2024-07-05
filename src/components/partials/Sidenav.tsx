@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Sidenav = () => {
     return (
-        <div className="md:w-[20%] w-[16%] h-full  border-r-2 border-zinc-400 p-5">
+        <div className="md:w-[20%] w-[16%] h-full  md:border-r-2 border-zinc-400 p-4">
             <h1 className="text-2xl text-white font-bold">
             <div className="flex ">
             <img className=" hidden md:flex w-[55px] h-[53px] m-0.5"
