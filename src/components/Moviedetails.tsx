@@ -33,7 +33,7 @@ const Moviedetails = () => {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
             }}
-            className="relative w-screen h-full px-[10%]"
+            className="relative w-[100vw] h-full px-[10%]"
         >
             {/* Part 1 navigation */}
             <nav className="h-[10vh] w-full text-zinc-100 flex items-center gap-10 text-xl ">
@@ -60,7 +60,7 @@ const Moviedetails = () => {
             </nav>
 
             {/* Part 2 Poster and details */}
-            <div className="w-full flex">
+            <div className="max-w-full block md:flex rounded-s-lg px-10">
                 <img
                     className="shadow-[8px_17px_38px_2px_rgba(0,0,0,.5)] h-[50vh] object-cover"
                     src={`https://image.tmdb.org/t/p/original/${
@@ -69,7 +69,7 @@ const Moviedetails = () => {
                     alt=""
                 />
 
-                <div className="content ml-[5%] text-white">
+                <div className="content block ml-[5%] text-white">
                     <h1 className="text-5xl font-black ">
                         {info.detail.name ||
                             info.detail.title ||
@@ -81,7 +81,7 @@ const Moviedetails = () => {
                         </small>
                     </h1>
 
-                    <div className="mt-3 mb-5 flex  items-center gap-x-3">
+                    <div className="mt-3 mb-5 md:flex block items-center gap-x-3">
                         <span className="rounded-full text-xl font-semibold bg-yellow-600 text-white w-[5vh] h-[5vh] flex justify-center items-center">
                             {(info.detail.vote_average * 10).toFixed()}{" "}
                             <sup>%</sup>

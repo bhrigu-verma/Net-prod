@@ -45,15 +45,16 @@ const Home = () => {
                 <Topnav />
                 <Header data={wallpaper} />
                 <div className="flex justify-between p-5">
-                    <h1 className="text-3xl font-semibold text-zinc-400">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl m-1 mr-5 font-semibold text-zinc-400">
                         Trending
                     </h1>
-
-                    <Dropdown
-                        title="Filter"
-                        options={["tv", "movie", "all"]}
-                        func={(e) => setcategory(e.target.value)}
-                    />
+                   <div className=" w-[25vw] "> <Dropdown 
+                    
+                    title="Filter"
+                    options={["tv", "movie", "all"]}
+                    func={(e) => setcategory(e.target.value)}
+                /></div>
+                   
                 </div>
                 <HorizontalCards data={trending} />
             </div>

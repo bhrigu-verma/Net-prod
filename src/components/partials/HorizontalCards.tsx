@@ -10,10 +10,10 @@ const HorizontalCards = ({ data, title }) => {
                     <Link
                         to={`/${d.media_type || title}/details/${d.id}`}
                         key={i}
-                        className="min-w-[72%] lg:min-w-[38%] h-[50vh]  bg-zinc-900 mr-2 lg:mr-5 mb-3"
+                        className="min-w-[72%] lg:min-w-[38%] h-[65vh]  bg-zinc-900 mr-2 lg:mr-5 mb-3"
                     >
                         <img
-                            className="w-full h-[70%]  lg:h-[55%] object-cover"
+                            className="max-w-full h-[70%]  lg:h-[55%] object-cover"
                             src={
                                 d.backdrop_path || d.poster_path
                                     ? `https://image.tmdb.org/t/p/original${
@@ -31,7 +31,7 @@ const HorizontalCards = ({ data, title }) => {
                                     d.original_title}
                             </h1>
                             <div className="hidden lg:block">
-                                {d.overview.slice(0, 100)}...
+                                {d.overview.slice(0, 190)}...
                                 <span className="text-blue-500"> more</span>
                             </div>
                         </div>
