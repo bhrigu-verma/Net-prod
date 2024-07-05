@@ -50,12 +50,12 @@ const Popular = () => {
     return popular.length > 0 ? (
         <div className="w-screen h-screen ">
             <div className=" px-[5%] w-full flex items-center justify-between ">
-            <img src={netflixImage} alt="My Image" className="h-[6vh] w-[6vh] top-7  left-0"/>
-                <h1 className=" text-2xl font-semibold text-zinc-400">
+            {/* <img src={netflixImage} alt="My Image" className="h-[6vh] w-[6vh] top-7  left-0"/> */}
+                <h1 className=" text-[20px] font-semibold text-zinc-400">
                 
                     <i
                         onClick={() => navigate(-1)}
-                        className="hover:text-[#6556CD] ri-arrow-left-line"
+                        className="hover:text-[#6556CD] text-sm ri-arrow-left-line"
                     ></i>{" "}
                     Popular
                 </h1>
