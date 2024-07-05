@@ -22,9 +22,9 @@ const Topnav = () => {
     }, [query]);
 
     return (
-        <div className="w-[76%] h-[12vh] relative flex mx-auto  items-center">
+        <div className="w-[98%] md:[76%] h-[12vh] relative flex mx-auto  items-center">
             
-            <i className="text-zinc-400 text-3xl ri-search-line"></i>
+            <i className="text-zinc-400 text-3xl ri-search-line hidden md:flex"></i>
             <input
                 onChange={(e) => setquery(e.target.value)}
                 value={query}
@@ -39,10 +39,12 @@ const Topnav = () => {
                 ></i>
             )}
               <Profile />
-              {/* <SignInButton>
-        <button className="text-white w-25vh font-bold bg-purple-500 rounded-lg">Sign in with Clerk</button>
-      </SignInButton> */}
-              <SignOutButton ><button className="text-zinc-300 w-25vh font-bold bg-purple-500 rounded-lg"> Sign Out</button></SignOutButton>
+              
+              <SignOutButton ><button className="flex items-center px-3 w-10 h-10 py-2 bg-purple-500 text-white rounded-lg shadow-md hover:bg-purple-600 transition-colors duration-300">
+    <i className="ri-logout-circle-r-line text-2xl sm:text-2xl md:text-3xl   "></i>
+    <span className="text-sm sm:text-base md:text-lg hidden md:flex"></span>
+  </button></SignOutButton>
+              
             <div className="z-[100] text-[16px] absolute w-[60%] max-h-[50vh] bg-zinc-700 top-[100%] left-[5%] overflow-auto">
                 {searches.map((s, i) => (
                     <Link
