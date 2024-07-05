@@ -13,7 +13,7 @@ const Header = ({ data }) => {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
             }}
-            className="max-w-full h md:h-[68vh] flex flex-col justify-end items-start p-[3%] select-none"
+            className="max-w-full h-[65vw] md:h-[68vh] flex flex-col justify-end items-start p-[3%] select-none"
         >
             <h1 className="w-[70%] lg:text-5xl md:text-4xl sm:text-4xl text-3xl  font-black text-white">
                 {data.name ||
