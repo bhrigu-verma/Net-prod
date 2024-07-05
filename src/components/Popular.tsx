@@ -11,7 +11,7 @@ import netflixImage from "../assets/images/netflix.png";
 const Popular = () => {
     document.title = "Netflix | Popular";
 
-    const navigate = useNavigate();vv
+    const navigate = useNavigate();
     const [category, setcategory] = useState("movie");
     const [popular, setpopular] = useState([]);
     const [page, setpage] = useState(1);
