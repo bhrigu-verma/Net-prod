@@ -8,46 +8,46 @@ const Sidenav = () => {
         <div className="w-[22%] h-full  border-r-2 border-zinc-400 p-10">
             <h1 className="text-2xl text-white font-bold">
             <div className="flex ">
-            <img className="  w-[55px] h-[53px] m-0.5"
+            <img className=" hidden md:flex w-[55px] h-[53px] m-0.5"
             alt="Netflix Icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png
             " />
                 <span className="text-4xl mt-3 hidden md:flex ">Netflix</span></div>
             </h1>
-            <nav className="flex flex-col text-zinc-400 text-xl gap-3">
+            <nav className="flex flex-col text-zinc-400 text-xl gap-2">
             <h1 className="text-white font-semibold text-2xl mt-10 mb-5">
                 <div className="hidden md:block">What we offer</div>
             </h1>
             <Link
                 to="/trending"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg p-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
             >
                 <i className="ri-fire-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">Trending</div>
             </Link>
             <Link
                 to="/popular"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg p-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
             >
                 <i className="ri-bar-chart-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">Popular</div>
             </Link>
             <Link
                 to="/movie"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg p-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
             >
                 <i className="ri-movie-2-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">Movies</div>
             </Link>
             <Link
                 to="/tv"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg p-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
             >
                 <i className="ri-tv-2-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">TV Shows</div>
             </Link>
             <Link
                 to="/person"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg p-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
             >
                 <i className="ri-team-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">People</div>
@@ -55,18 +55,18 @@ const Sidenav = () => {
         </nav>
            
             <hr className="border-none h-[1px] bg-zinc-400 hidden md:block" />
-            <nav className="flex flex-col text-zinc-400 text-xl gap-3 pr-2">
+            <nav className="flex flex-col text-zinc-400 text-xl gap-3 ">
                 <h1 className="text-white font-semibold text-xl mt-10 mb-5">
                 <div className="hidden md:block">Website info  </div>
                 </h1>
-                <Link className=" flex items-center space-x-2 md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg p-5">
+                <Link className=" flex items-center space-x-2 md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg pt-2">
                     <i className="mr-2 ri-information-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl "></i> <div className="hidden md:block"> About Us </div>
                 </Link>
                 <Link className="flex items-center  md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg p-5">
                     <i className="mr-2 ri-phone-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                     <div className="hidden md:block">Contact us  </div>
                 </Link>
-                <Link className="flex items-center space-x-2 md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg p-5"
+                <Link className="flex items-center space-x-2 md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg pt-2"
                 to="https://bhriguverma-theta.vercel.app/"
                 >
                 <i className="ri-github-line text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
