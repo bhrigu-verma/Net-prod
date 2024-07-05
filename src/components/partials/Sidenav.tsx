@@ -8,14 +8,14 @@ const Sidenav = () => {
         <div className="w-[20%] h-full  border-r-2 border-zinc-400 p-10">
             <h1 className="text-2xl text-white font-bold">
             <div className="flex ">
-            <img className="  w-[54px] h-auto m-0.5"
+            <img className="  w-[49px] h-[45px] md:w-[45px] md:h-[53px] m-0.5"
             alt="Netflix Icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png
             " />
-                <span className="text-4xl mt-3">Netflix</span></div>
+                <span className="text-4xl mt-3 hidden md:flex ">Netflix</span></div>
             </h1>
             <nav className="flex flex-col text-zinc-400 text-xl gap-3">
             <h1 className="text-white font-semibold text-2xl mt-10 mb-5">
-                <div className="hidden md:block">New feeds</div>
+                <div className="hidden md:block">What we offer</div>
             </h1>
             <Link
                 to="/trending"
