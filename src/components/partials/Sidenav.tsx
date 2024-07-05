@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const Sidenav = () => {
     return (
-        <div className="w-[20%] h-full  border-r-2 border-zinc-400 p-10">
+        <div className="w-[22%] h-full  border-r-2 border-zinc-400 p-10">
             <h1 className="text-2xl text-white font-bold">
             <div className="flex ">
-            <img className="  w-[49px] h-[45px] md:w-[45px] md:h-[53px] m-0.5"
+            <img className="  w-[55px] h-[53px] m-0.5"
             alt="Netflix Icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png
             " />
                 <span className="text-4xl mt-3 hidden md:flex ">Netflix</span></div>
