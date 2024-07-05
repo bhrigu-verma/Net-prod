@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Sidenav = () => {
     return (
-        <div className="w-[22%] h-full  border-r-2 border-zinc-400 p-10">
+        <div className="md:w-[20%] w-[16%] h-full  border-r-2 border-zinc-400 p-5">
             <h1 className="text-2xl text-white font-bold">
             <div className="flex ">
             <img className=" hidden md:flex w-[55px] h-[53px] m-0.5"
@@ -19,35 +19,35 @@ const Sidenav = () => {
             </h1>
             <Link
                 to="/trending"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg   md:p-5"
             >
                 <i className="ri-fire-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">Trending</div>
             </Link>
             <Link
                 to="/popular"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg   md:p-5"
             >
                 <i className="ri-bar-chart-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">Popular</div>
             </Link>
             <Link
                 to="/movie"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg   md:p-5"
             >
                 <i className="ri-movie-2-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">Movies</div>
             </Link>
             <Link
                 to="/tv"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg   md:p-5"
             >
                 <i className="ri-tv-2-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">TV Shows</div>
             </Link>
             <Link
                 to="/person"
-                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg pt-2 md:p-5"
+                className="flex items-center space-x-2 md:hover:bg-[#6556CD] hover:text-white duration-400 rounded-lg   md:p-5"
             >
                 <i className="ri-team-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:flex">People</div>
@@ -59,17 +59,14 @@ const Sidenav = () => {
                 <h1 className="text-white font-semibold text-xl mt-10 mb-5">
                 <div className="hidden md:block">Website info  </div>
                 </h1>
-                <Link className=" flex items-center space-x-2 md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg pt-2">
+                <Link className=" flex items-center space-x-2 md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg  ">
                     <i className="mr-2 ri-information-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl "></i> <div className="hidden md:block"> About Us </div>
                 </Link>
-                <Link className="flex items-center  md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg p-5">
-                    <i className="mr-2 ri-phone-fill text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
-                    <div className="hidden md:block">Contact us  </div>
-                </Link>
-                <Link className="flex items-center space-x-2 md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg pt-2"
+               
+                <Link className="flex items-center space-x-2 md:hover:bg-[#6556CD] md:hover:text-white duration-300 rounded-lg  "
                 to="https://bhriguverma-theta.vercel.app/"
                 >
-                <i className="ri-github-line text-4xl rounded-lg hover:bg-[#6556CD] p-[3px] sm:text-3xl md:text-2xl lg:text-xl"></i>
+                <i className="ri-github-line text-4xl rounded-lg hover:bg-[#6556CD]   sm:text-3xl md:text-2xl lg:text-xl"></i>
                 <div className="hidden md:block">Bverma  </div>
                 </Link>
                 <div className="text-[12px] left-0 bottom-0"> <div className="hidden md:block"> Copyright@bhriguverma </div></div>
